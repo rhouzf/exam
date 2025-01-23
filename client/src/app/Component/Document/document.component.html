@@ -1,0 +1,10 @@
+<div *ngIf="document">
+    <h2>Détails du document</h2>
+    <p><strong>Chemin :</strong> {{ document.getChemin() }}</p>
+    <p><strong>Taille :</strong> {{ document.getTaille() }} octets</p>
+    <p><strong>Propriétaire :</strong> {{ document.getIdentifiantProprietaire() }}</p>
+    <p><strong>Type :</strong> {{ document.type }}</p>
+</div>
+<div *ngIf="!document">
+    <p>Document non trouvé.</p>
+</div>
